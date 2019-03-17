@@ -72,3 +72,4 @@ In parent interface class 2 defaultmethod
 In parent class A staticMethod
 In parent interface class 1 staticMethod
 i in interface
+
