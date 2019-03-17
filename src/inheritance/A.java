@@ -8,21 +8,29 @@ class A extends AabstractClass implements BInterface2{
 	public A() {
 		System.out.println("In parent class A");
 	}
-	static void staticMethod() {
-		System.out.println("In parent class A staticMethod");		
+	public void displayA() {
+		System.out.println("inside A i = "+i+" j = "+j+" nonStaticJ = "+nonStaticJ+" staticJ = "+staticJ);
+		
+	}
+	
+	static void staticMethodinAandAbstract() {
+		System.out.println("In parent A class staticMethodinAandAbstract");		
+	}
+	static void staticMethodinAandBandAbstract() {
+		System.out.println("In parent A class staticMethodinA-BandAbstract");			
+	}
+	public void nonStaticMethodinAandBandAbstract() {
+		System.out.println("In parent A class nonStaticMethodinA-BandAbstract");		
 	}
 	@Override
 	void setTest() {
 		// TODO Auto-generated method stub
 		
 	}
-	public void displayA() {
-		System.out.println("inside A i = "+i+" j = "+j+" nonStaticJ = "+nonStaticJ+" staticJ = "+staticJ);
-		
-	}
 	@Override
-	public void test() {
+	public void abstractMethodinInterface1And2() {
 		// TODO Auto-generated method stub
 		
 	}
+
 }

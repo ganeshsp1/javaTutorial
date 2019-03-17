@@ -10,12 +10,7 @@ class B extends A implements BInterface1{
 	//try changing the constructor in A to private
 	public B() {
 		System.out.println("In child class B");
-	}
-	@Override
-	public void test() {
-		// TODO Auto-generated method stub
-		
-	}
+	}	
 	public void displayB() {
 		System.out.println("inside B i = "+i+" nonStaticJ = "+nonStaticJ+" staticJ = "+staticJ);
 		}
@@ -26,5 +21,16 @@ class B extends A implements BInterface1{
 		BInterface1.super.defaultmethod();
 		//this will get the interface 2's default method since super will call the default method of A which actually implements interface 2
 		super.defaultmethod();
+	}
+	static void staticMethodinAandBandAbstract() {
+		System.out.println("In child B class staticMethodinA-BandAbstract");			
+	}
+	public void nonStaticMethodinAandBandAbstract() {
+		System.out.println("In child B class nonStaticMethodinA-BandAbstract");		
+	}
+	@Override
+	public void abstractMethodinInterface2() {
+		// TODO Auto-generated method stub
+		
 	}
 }

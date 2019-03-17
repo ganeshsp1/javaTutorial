@@ -5,9 +5,19 @@ abstract class AabstractClass {
 	public AabstractClass() {
 		System.out.println("In parent abstract class");
 	}
-	static void staticMethod() {
-		System.out.println("In parent abstract class staticMethod");		
+	static void staticMethodOnlyinAbstract() {
+		System.out.println("In parent abstract class staticMethodOnlyinAbstract");		
 	}
+	static void staticMethodinAandAbstract() {
+		System.out.println("In parent abstract class staticMethodinAandAbstract");		
+	}
+	static void staticMethodinAandBandAbstract() {
+		System.out.println("In parent abstract class staticMethodinA-BandAbstract");			
+	}
+	public void nonStaticMethodinAandBandAbstract() {
+		System.out.println("In parent abstract class nonStaticMethodinA-BandAbstract");		
+	}
+	
 	abstract void setTest();
 	void setI() {
 		i = 5;

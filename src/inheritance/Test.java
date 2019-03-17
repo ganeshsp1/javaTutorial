@@ -18,8 +18,17 @@ public class Test{
 		System.out.println("Anonymous Class for Interface");
 		//This is not instantiating the interface, instead it's instantiating an anonymous inner class , hence creating an anonymous object.
 		BInterface1 bbi = new BInterface1() {
+			
 			@Override
-			public void test() {
+			public void abstractMethodinInterface2() {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void abstractMethodinInterface1And2() {
+				// TODO Auto-generated method stub
+				
 			}
 		};
 		System.out.println("Anonymous Class for Abstract Class");
@@ -73,18 +82,52 @@ public class Test{
 		System.out.println("Printing new B class object of type A");
 		ab.displayA();
 		
-		System.out.println("================================================");
-		
-		
-		a.staticMethod();
+		System.out.println("=====================Default Interface Methods===========================");
+
 		bi.defaultmethod();
 		b.defaultmethod();
-		b.staticMethod();
+		
+		System.out.println("===============static Method Only in Abstract=======================");
+		a.staticMethodOnlyinAbstract();
+		b.staticMethodOnlyinAbstract();
 		System.out.println("Printing A class object of type Abstract - static method");
-		aa.staticMethod();
+		aa.staticMethodOnlyinAbstract();
 		System.out.println("Printing B class object of type A - static method");
-		ab.staticMethod();
-		BInterface1.staticMethod();
-		System.out.println(BInterface1.i);
+		ab.staticMethodOnlyinAbstract();
+		
+		
+		System.out.println("===============static Method in A and Abstract=======================");
+		a.staticMethodinAandAbstract();
+		b.staticMethodinAandAbstract();
+		System.out.println("Printing A class object of type Abstract - static method");
+		aa.staticMethodinAandAbstract();
+		System.out.println("Printing B class object of type A - static method");
+		ab.staticMethodinAandAbstract();
+		
+		System.out.println("===============static Method in A and B and Abstract=======================");
+		a.staticMethodinAandBandAbstract();
+		b.staticMethodinAandBandAbstract();
+		System.out.println("Printing A class object of type Abstract");
+		aa.staticMethodinAandBandAbstract();
+		System.out.println("Printing B class object of type A");
+		ab.staticMethodinAandBandAbstract();
+		
+		System.out.println("===============Non static Method in A and B and Abstract=======================");
+		a.nonStaticMethodinAandBandAbstract();
+		b.nonStaticMethodinAandBandAbstract();
+		System.out.println("Printing A class object of type Abstract");
+		aa.nonStaticMethodinAandBandAbstract();
+//		note the output of following line to know difference between static and non static methods
+		System.out.println("Printing B class object of type A");
+		ab.nonStaticMethodinAandBandAbstract();
+		
+		System.out.println("===============static Method Only in interface=======================");
+//		The static method of interface BInterface1 can only be accessed as BInterface1.staticMethodOnlyInInterface
+//		b.staticMethodOnlyInInterface();
+//		a.staticMethodOnlyInInterface();
+//		bi.staticMethodOnlyInInterface();
+		BInterface1.staticMethodOnlyInInterface();
+		
+		
 	};
 }

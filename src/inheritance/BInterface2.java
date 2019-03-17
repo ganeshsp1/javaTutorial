@@ -7,5 +7,5 @@ interface BInterface2 {
 	default void defaultmethod() {
 		System.out.println("In parent interface class 2 defaultmethod");
 	}
-	abstract void test();	
+	abstract void abstractMethodinInterface1And2();	
 }
