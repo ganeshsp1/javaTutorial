@@ -6,6 +6,8 @@ class A extends AabstractClass implements BInterface2{
 	static int staticJ=5;	
 	//constructors can be public, private or protected
 	public A() {
+//		this below line will make the whole program run in infinite loop and hence cause stack overflow error
+//		new B();
 		System.out.println("In parent class A");
 	}
 	public void displayA() {
