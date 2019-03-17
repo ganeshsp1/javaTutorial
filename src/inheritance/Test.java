@@ -80,6 +80,10 @@ public class Test{
 		bi.defaultmethod();
 		b.defaultmethod();
 		b.staticMethod();
+		System.out.println("Printing A class object of type Abstract - static method");
+		aa.staticMethod();
+		System.out.println("Printing B class object of type A - static method");
+		ab.staticMethod();
 		BInterface1.staticMethod();
 		System.out.println(BInterface1.i);
 	};
