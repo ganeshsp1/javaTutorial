@@ -1,5 +1,6 @@
-#Java Tutorial
-##Inheritance
+# Java Tutorial
+This tutorial is meant to learn Java for beginners as well as advanced developers.
+## Inheritance
 Inheritance can be learned by running the Test class inside inheritance, you could change and play with the variables and methods to get a better understanding.
 
 Things discussed:
